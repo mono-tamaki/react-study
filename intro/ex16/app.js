@@ -1,9 +1,7 @@
 ReactDOM.render(
     React.createElement(
         Evaluator,
-        {
-            text: '5 / 4'
-        }
+        null
     ),
     document.getElementById('content')
 );
