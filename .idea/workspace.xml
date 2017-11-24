@@ -16,30 +16,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intro/ex17/index.html">
+        <entry file="file://$PROJECT_DIR$/intro/ex18/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="130">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Hello.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/intro/ex17/Hello.js">
+        <entry file="file://$PROJECT_DIR$/intro/ex18/Hello.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="385">
+              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intro/ex17/app.js">
+        <entry file="file://$PROJECT_DIR$/intro/ex18/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -71,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/intro/ex2/index.html" />
         <option value="$PROJECT_DIR$/intro/ex1/index.html" />
         <option value="$PROJECT_DIR$/intro/ex3/index.html" />
         <option value="$PROJECT_DIR$/intro/ex4/app.js" />
@@ -120,8 +121,9 @@
         <option value="$PROJECT_DIR$/intro/ex16/index.html" />
         <option value="$PROJECT_DIR$/intro/ex16/app.js" />
         <option value="$PROJECT_DIR$/intro/ex17/app.js" />
-        <option value="$PROJECT_DIR$/intro/ex17/index.html" />
         <option value="$PROJECT_DIR$/intro/ex17/Hello.js" />
+        <option value="$PROJECT_DIR$/intro/ex17/index.html" />
+        <option value="$PROJECT_DIR$/intro/ex18/Hello.js" />
       </list>
     </option>
   </component>
@@ -175,7 +177,7 @@
               <item name="tamaki04" type="b2602c69:ProjectViewProjectNode" />
               <item name="tamaki04" type="462c0819:PsiDirectoryNode" />
               <item name="intro" type="462c0819:PsiDirectoryNode" />
-              <item name="ex17" type="462c0819:PsiDirectoryNode" />
+              <item name="ex18" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,16 +307,15 @@
       <workItem from="1511153216683" duration="19513000" />
       <workItem from="1511253848526" duration="10146000" />
       <workItem from="1511327155404" duration="609000" />
-      <workItem from="1511510782415" duration="3153000" />
+      <workItem from="1511510782415" duration="6545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36413000" />
+    <option name="totallyTimeSpent" value="39805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="230" y="216" width="1551" height="819" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -355,27 +356,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comp_dir/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/ex3/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/intro/ex2/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intro/ex4/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -661,27 +641,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intro/ex17/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/intro/ex17/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="26">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/intro/ex17/Hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="403">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro/ex17/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro/ex18/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro/ex18/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro/ex18/Hello.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
