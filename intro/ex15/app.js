@@ -1,11 +1,9 @@
 ReactDOM.render(
-    // React.createElement(HelloWorld),
     React.createElement(
-        HelloWorld,
+        Evaluator,
         {
-            name: 'React'
+            text: '5 / 4'
         }
-        // ２番目の引数として、nameという名前のプロパティに文字列の値「React」を与えている
     ),
     document.getElementById('content')
 );
