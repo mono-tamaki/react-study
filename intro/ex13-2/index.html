@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+
+<script type="text/babel" src="./Hello.js"></script>
+<script type="text/babel" src="./app.js"></script>
+<h1>Reactならではの機能を発揮する「カスタムコンポーネント」の作成：React.createClassではなく、React.Componentを用いてHello World</h1>
+<p>
+【解説】<br>
+１．React.Componentメソッドを使って、Hello Worldするカスタムコンポーネント作成<br>
+２．createElementメソッドに、１で作成したカスタムコンポーネントを指定して要素を作成<br>
+<br>
+※ React.createClassとReact.Componentの違いについて<br>
+一番の違いはES6を使うかどうか。<br>
+　ES5以前：React.createClass<br>
+　　　　　　初期化メソッドはgetInitializer<br>
+　　　　　　イベントハンドラーなどはauto-bindingが適用される<br>
+　ES6　　：React.Component<br>
+　　　　　　初期化メソッドはconstructor<br>
+　　　　　　イベントハンドラーなどは明示的に bindingしてあげる必要がある<br>
+　　　　　　React.Componentではmixinがサポートされていない。ES6自体でmixinがサポートされていないため。<br>
+　⇒基本的にはES6に移行するため、React.Componentを利用することが推奨されます。<br>
+<br>
+参考）ES5⇒ES6への変換について：<a href="https://qiita.com/kuniken/items/2e850daa26a10b5098d6">ES5のReact.jsソースをES6ベースに書き換える</a>
+</p>
+<hr>
+
+<div id="content"></div>
+
+
+</body>
+</html>

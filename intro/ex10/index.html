@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<div id="content">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+
+
+<script type="text/babel" src="./Comment.js"></script>
+<script type="text/babel" src="./app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+<h1>コンポーネントのモジュール化　※ES6表記の場合</h1>
+<p>ES6表記の場合、Babelを用いて徒手的にコンパイルする方法もあるが、そもそも最初うまくいかなかったのはbabelの記載ミスだった。<br>
+exportの記述を「export default クラス名」（ES6の記法）にしていた。<br>
+正しくは、「exports.クラス名 = クラス名;」<br>
+参考１：ES6とBabelの記載方法について）https://qiita.com/inuscript/items/41168a50904242005271<br>
+参考２：Babelを用いて徒手的にコンパイルする方法）https://qiita.com/tanaka0325/items/f0d217e4e967286046a0</p>
+<hr>
+<div class="hello_ex"></div>
+
+
+<div class="comp_ex"></div>
+
+
+</body>
+</html>
