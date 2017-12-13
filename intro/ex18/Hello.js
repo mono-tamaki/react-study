@@ -1,18 +1,18 @@
-// // ES5É½µ­
+// // ES5É½ï¿½ï¿½
 // var Evaluator = React.createClass({
-//     // ¥¹¥Æ¡¼¥È¤ò½é´ü²½¤¹¤ë¥á¥½¥Ã¥É
+//     // ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½È¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¥½ï¿½Ã¥ï¿½
 //     getInitialState: function() {
 //         return {
-//             // expression¤È¤¤¤¦¥¹¥Æ¡¼¥È¤ÎÃÍ¤ò¶õÊ¸»ú¤Ë½é´ü²½
-//             // ¥¹¥Æ¡¼¥È¤ò»È¤¦ºÝ¤Ë¤Ï¡¢Â¾¤Ç»²¾È¤Ç¤­¤ë¤è¤¦¤Ë½é´ü²½¡ÊÀë¸À¡Ë¤¬É¬Í×
+//             // expressionï¿½È¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½È¤ï¿½ï¿½Í¤ï¿½ï¿½Ê¸ï¿½ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½
+//             // ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½È¤ï¿½È¤ï¿½ï¿½Ý¤Ë¤Ï¡ï¿½Â¾ï¿½Ç»ï¿½ï¿½È¤Ç¤ï¿½ï¿½ï¿½è¤¦ï¿½Ë½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½É¬ï¿½ï¿½
 //             expression: ''
 //         };
 //     },
-//     // ¥æ¡¼¥¶ÆþÎÏ»þ¸Æ¤Ð¤ì¤ë¥á¥½¥Ã¥É¡ÊreCalcValue¤Ï¸å½Ò²Õ½ê¤Ç¸Æ¤Ö¡Ë
+//     // ï¿½æ¡¼ï¿½ï¿½ï¿½ï¿½ï¿½Ï»ï¿½ï¿½Æ¤Ð¤ï¿½ï¿½á¥½ï¿½Ã¥É¡ï¿½reCalcValueï¿½Ï¸ï¿½Ò²Õ½ï¿½Ç¸Æ¤Ö¡ï¿½
 //     reCalcValue: function(e) {
 //         if (e.key === 'Enter')
 //             this.setState({
-//                 // ÆþÎÏÃÍ¡ÊÊ¸»úÎó¡Ë¤òexpression¥¹¥Æ¡¼¥È¤Ë¥»¥Ã¥È
+//                 // ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½Ê¸ï¿½ï¿½ï¿½ï¿½Ë¤ï¿½expressionï¿½ï¿½ï¿½Æ¡ï¿½ï¿½È¤Ë¥ï¿½ï¿½Ã¥ï¿½
 //                 expression: e.target.value
 //             });
 //     },
@@ -21,8 +21,8 @@
 //             null,
 //             React.DOM.input({
 //                 type: 'text',
-//                 // ¥­¡¼¤¬²¡¤µ¤ì¤¿¤È¤­¤ËreClacValue¥á¥½¥Ã¥É¤ò¸Æ¤Ö¤è¤¦¤ËÀßÄê
-//                 onKeyPress: this.reCalcValue // onKeyPress:React´ûÄê¤ÎÂ°À­
+//                 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì¤¿ï¿½È¤ï¿½ï¿½ï¿½reClacValueï¿½á¥½ï¿½Ã¥É¤ï¿½Æ¤Ö¤è¤¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//                 onKeyPress: this.reCalcValue // onKeyPress:Reactï¿½ï¿½ï¿½ï¿½ï¿½Â°ï¿½ï¿½
 //             }),
 //             React.DOM.h2(null, eval(this.state.expression))
 //         );
@@ -30,38 +30,27 @@
 // });
 
 
-
-
-
-// ES6É½µ­
-import * as React from "react";
-
+// ES6É½ï¿½ï¿½
 class Evaluator extends React.Component{
-    // ¥¹¥Æ¡¼¥È¤ò½é´ü²½¤¹¤ë¥á¥½¥Ã¥É
-    // ES6¤Ç¤ÏgetInitialState¤ÏÆ°¤«¤Ê¤¤
+
     constructor() {
         super();
-        this.state = {
-            // expression¤È¤¤¤¦¥¹¥Æ¡¼¥È¤ÎÃÍ¤ò¶õÊ¸»ú¤Ë½é´ü²½
-            // ¥¹¥Æ¡¼¥È¤ò»È¤¦ºÝ¤Ë¤Ï¡¢Â¾¤Ç»²¾È¤Ç¤­¤ë¤è¤¦¤Ë½é´ü²½¡ÊÀë¸À¡Ë¤¬É¬Í×
-            expression: ''
-        };
+        this.state = {expression: ''};
     }
-    // ¥æ¡¼¥¶ÆþÎÏ»þ¸Æ¤Ð¤ì¤ë¥á¥½¥Ã¥É¡ÊreCalcValue¤Ï¸å½Ò²Õ½ê¤Ç¸Æ¤Ö¡Ë
-    reCalcValue(e) {
+
+    reCalcValue = (e) => {
         if (e.key === 'Enter')
-        this.setState({
-            // ÆþÎÏÃÍ¡ÊÊ¸»úÎó¡Ë¤òexpression¥¹¥Æ¡¼¥È¤Ë¥»¥Ã¥È
-            expression: e.target.value
-        });
+            this.setState({
+                expression: e.target.value
+            });
     }
+
     render() {
         return React.DOM.div(
             null,
             React.DOM.input({
-              type: 'text',
-              // ¥­¡¼¤¬²¡¤µ¤ì¤¿¤È¤­¤ËreClacValue¥á¥½¥Ã¥É¤ò¸Æ¤Ö¤è¤¦¤ËÀßÄê
-              onKeyPress: this.reCalcValue // onKeyPress:React´ûÄê¤ÎÂ°À­
+                type: 'text',
+                onKeyPress: this.reCalcValue
             }),
             React.DOM.h2(null, eval(this.state.expression))
         );
