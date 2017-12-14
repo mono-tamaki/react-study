@@ -1,14 +1,23 @@
-var gulp = require('gulp');
-var browserify = require('browserify');
-var source = require("vinyl-source-stream");
-var reactify = require('reactify');
+var gulp = require("gulp");
 
-gulp.task('browserify', function(){
-    var b = browserify({
-        entries: ['./client/scripts/index.js'],
-        transform: [reactify]
+var browserSync = require('browser-sync').create();
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "intro",
+            index: "index.html"
+        }
     });
-    return b.bundle()
-        .pipe(source('app.js'))
-        .pipe(gulp.dest('./client/build'));
+});
+
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
+// src 配下の *.html, *.css ファイルが変更されたリロード。
+gulp.task('default', ['browser-sync'], function () {
+    gulp.watch("intro/ex*/*.html", ['bs-reload']);
+    gulp.watch("intro/ex*/*.css", ['bs-reload']);
+    gulp.watch("intro/ex*/*.js", ['bs-reload']);
 });
