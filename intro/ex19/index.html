@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <script type="text/javascript">
+      function getJson() {
+          //var xmlhttp = createXMLHttpRequest(); //旧バージョンのIEなどに対応する場合
+          var xmlhttp = new XMLHttpRequest();
+
+          xmlhttp.onreadystatechange = function () {
+              if (xmlhttp.readyState == 4) {
+// 戻り値	概要
+// 0     初期化されていない（openメソッドがまだ呼び出されていない）
+// 1     ロード中（openメソッドは呼び出されたが，sendメソッドはまだ呼び出されていない）
+// 2	    ロード済み（sendメソッドは呼び出されたが，応答は取得していない。ステータス/ヘッダー情報はまだ利用できない）
+// 3	    一部の応答を取得（応答ステータス/ヘッダーは取得できるが，本体は取得できない）
+// 4     全データを取得済み
+                  if (xmlhttp.status == 200) {
+// HTTPステータス	              意味
+// 200 OK                      成功
+// 401 Unauthorized            認証を要求
+// 403 Forbidden               アクセスを拒否
+// 404 Not Found               リソースが見つからない
+// 500 Internal Server Error   内部サーバー・エラー
+// 503 Service Unavailable     サーバーが利用不可
+                      var data = JSON.parse(xmlhttp.responseText);
+
+                      var elem = document.getElementById("output_name");
+                      elem.innerText = data.name;
+                      var elem = document.getElementById("output_weight");
+                      elem.innerText = data.weight;
+                      var elem = document.getElementById("output_height");
+                      elem.innerText = data.height;
+                      var elem = document.getElementById("output_price");
+                      elem.innerText = data.price;
+                      var elem = document.getElementById("output_memo");
+                      elem.innerText = data.memo;
+                  } else {
+                  }
+              }
+          }
+          xmlhttp.open("GET", "data.json");
+          xmlhttp.send();
+      }
+
+      function createXMLHttpRequest() {
+          if (window.XMLHttpRequest) { return new XMLHttpRequest() }
+          if (window.ActiveXObject) {
+              try { return new ActiveXObject("Msxml2.XMLHTTP.6.0") } catch (e) { }
+              try { return new ActiveXObject("Msxml2.XMLHTTP.3.0") } catch (e) { }
+              try { return new ActiveXObject("Microsoft.XMLHTTP") } catch (e) { }
+          }
+          return false;
+      }
+
+  </script>
+
+</head>
+<body>
+<h1>JSONファイルからのデータ読み込み</h1>
+<p>・JSONファイルからデータを読み込むだけ</p>
+<hr>
+<input id="Button_Get" type="button" value="JSON読み込み" onclick="getJson();" />
+
+<div>受信情報</div>
+<!--Name:<span id="output_name"></span><br />-->
+<!--Height:<span id="output_height"></span><br />-->
+<!--Weight:<span id="output_weight"></span><br />-->
+<!--Price:<span id="output_price"></span><br />-->
+<!--Memo:<span id="output_memo"></span><br />-->
+<!--Memo:<span id="output_memo"></span><br />-->
+
+<table class="listitem" id="listitem-1">
+<tbody>
+<tr>
+  <th>和文標題</th>
+  <td id="output_name"></td>
+</tr>
+<tr>
+  <th>英文標題</th>
+  <td id="output_height"></td>
+</tr>
+<tr>
+  <th>発行年</th>
+  <td id="output_weight"></td>
+</tr>
+<tr>
+  <th>資料名</th>
+  <td id="output_price"></td>
+</tr>
+<tr>
+  <th>著者名</th>
+  <td id="output_memo"></td>
+</tr>
+<tr>
+  <th>言語</th>
+  <td id="output_memo"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

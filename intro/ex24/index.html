@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript">
+//       function getJson() {
+//           //var xmlhttp = createXMLHttpRequest(); //旧バージョンのIEなどに対応する場合
+//           var xmlhttp = new XMLHttpRequest();
+//
+//           xmlhttp.onreadystatechange = function () {
+//               if (xmlhttp.readyState == 4) {
+// // 戻り値	概要
+// // 0     初期化されていない（openメソッドがまだ呼び出されていない）
+// // 1     ロード中（openメソッドは呼び出されたが，sendメソッドはまだ呼び出されていない）
+// // 2	    ロード済み（sendメソッドは呼び出されたが，応答は取得していない。ステータス/ヘッダー情報はまだ利用できない）
+// // 3	    一部の応答を取得（応答ステータス/ヘッダーは取得できるが，本体は取得できない）
+// // 4     全データを取得済み
+//                   if (xmlhttp.status == 200) {
+// // HTTPステータス	              意味
+// // 200 OK                      成功
+// // 401 Unauthorized            認証を要求
+// // 403 Forbidden               アクセスを拒否
+// // 404 Not Found               リソースが見つからない
+// // 500 Internal Server Error   内部サーバー・エラー
+// // 503 Service Unavailable     サーバーが利用不可
+//                       var input = JSON.parse(xmlhttp.responseText);
+//
+//                       console.log("input.length : " + input.length);
+//                       console.log("input.length / 10 : " + (input.length / 10));
+//                       console.log("Math.round(input.length / 10) : " + (Math.round(input.length / 10)));
+//                       // for (var i=0 ; i<10 ; i++) {
+//                       //  console.log(input[i].auth); // 成功
+//                       //     // console.log(input.length); // 成功
+//                       // }
+//
+//
+//                       // for (var i=0 ; i<10 ; i++) {
+//                       //     var elem = document.getElementById("item_auth" + i);
+//                       //     elem.innerText = input[i].auth;
+//                       //
+//                       //     var elem = document.getElementById("item_date" + i);
+//                       //     elem.innerText = input[i].date;
+//                       //
+//                       //     var elem = document.getElementById("item_lang" + i);
+//                       //     elem.innerText = input[i].lang;
+//                       //
+//                       //     var elem = document.getElementById("item_name" + i);
+//                       //     elem.innerText = input[i].name;
+//                       //
+//                       //     var elem = document.getElementById("item_title_e" + i);
+//                       //     elem.innerText = input[i].title_e;
+//                       //
+//                       //     var elem = document.getElementById("item_title_j" + i);
+//                       //     elem.innerText = input[i].title_j;
+//                       // }
+//
+//                       var pager_buf = "<p>page. ";
+//                       var pager_end = "";
+//                       pager_buf = pager_buf + "1";
+//                       if ((input.length / 10) >= 12) {
+//                           console.log("test 1");
+//                           for (var offset = 2; offset < 12; offset++) {
+//                               pager_buf = pager_buf + " / " + "<span><a href=\"#\">" + offset + "</a>";
+//                           }
+//                       }
+//                       console.log("test 2");
+//                       if (input.length / 10 > 11)
+//                       {
+//                         pager_end = " / ... / " + (Math.round(input.length / 10) + 1);
+//                       }
+//                       pager_buf = pager_buf + pager_end + "</p>";
+//                       target = document.getElementById("mypager");
+//                       target.innerHTML = pager_buf;
+//                       // page. 1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / ... / 56
+//
+//                       var buf = "";
+//                       // for(i = 0 ; i < input.length;i++)
+//                       for(i = 0 ; i < 10;i++)
+//                       {
+//                           buf=buf + "<table><tbody>";
+//                           buf=buf + "<tr><th>和文標題</th><td>"+input[i]['title_j']+"</td></tr>";
+//                           buf=buf + "<tr><th>英文標題</th><td>"+input[i]['title_e']+"</td></tr>";
+//                           buf=buf + "<tr><th>発行年</th><td>"+input[i]['date']+"</td></tr>";
+//                           buf=buf + "<tr><th>資料名</th><td>"+input[i]['name']+"</td></tr>";
+//                           buf=buf + "<tr><th>著者名</th><td>"+input[i]['auth']+"</td></tr>";
+//                           buf=buf + "<tr><th>言語</th><td>"+input[i]['lang']+"</td></tr>";
+//                           buf=buf + "</tbody></table>";
+//                       }
+//                       // document.write(buf);
+//                       target = document.getElementById("mytable");
+//                       target.innerHTML = buf;
+//
+//
+//                   } else {
+//                   }
+//               }
+//           }
+//           xmlhttp.open("GET", "essay.json");
+//           xmlhttp.send();
+//       }
+//
+//       function createXMLHttpRequest() {
+//           if (window.XMLHttpRequest) { return new XMLHttpRequest() }
+//           if (window.ActiveXObject) {
+//               try { return new ActiveXObject("Msxml2.XMLHTTP.6.0") } catch (e) { }
+//               try { return new ActiveXObject("Msxml2.XMLHTTP.3.0") } catch (e) { }
+//               try { return new ActiveXObject("Microsoft.XMLHTTP") } catch (e) { }
+//           }
+//           return false;
+//       }
+
+  </script>
+
+</head>
+<body>
+<!--<h1>JSONファイルからのデータ読み込み</h1>-->
+<!--<p>・ちょっとそれっぽくしただけ 〜読み込みデータを全て取得し表示する〜</p>-->
+<!--<hr>-->
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+
+
+
+<script type="text/babel" src="./Hello.js"></script>
+<input id="Button_Get" type="button" value="JSON読み込み" onclick="getJson();" />
+<!--<script type="text/babel" src="./app.js"></script>-->
+<h1>JSONから取得したデータをReactでテーブル表示する方法 ～Ver.ES5～</h1>
+<p></p>
+<div id="content"></div>
+
+
+
+
+
+<!--<div>受信情報</div>-->
+<!--Name:<span id="output_name"></span><br />-->
+<!--Height:<span id="output_height"></span><br />-->
+<!--Weight:<span id="output_weight"></span><br />-->
+<!--Price:<span id="output_price"></span><br />-->
+<!--Memo:<span id="output_memo"></span><br />-->
+<!--Memo:<span id="output_memo"></span><br />-->
+
+
+
+<div id="mypager"></div>
+
+
+<div id="mytable"></div>
+</body>
+</html>
